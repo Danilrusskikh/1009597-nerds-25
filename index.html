@@ -7,7 +7,9 @@
 <body>
 	<header class="main-header">
 		<nav class="main-navigation">
-			<img src="img/картинки/nerds-logo.svg" width="160" height="65" alt="логотип дизайн студии «Nerds»">
+			<a class="main-header-logo">
+				<img src="img/картинки/nerds-logo.svg" width="160" height="65" alt="логотип дизайн студии «Nerds»">
+			</a>
 			<ul class="site-navigation">
 				<li><a href="#">Студия</a></li>					
 			    <li><a href="#">Клиенты</a></li>
@@ -47,7 +49,22 @@
 				    </p>
 				</li>
 			</ul>
-		</section>		
+		</section>	
+		<section class="feedback">
+			<p>Напишите нам</p>
+			<form class="feedback-form" method="post" action="#">
+			<p class="feedback-item">
+				<label><input type="text" name="name" value="" placeholder="Имя Фамилия">Ваше имя:</label>
+			</p>
+			<p class="feedback-item">
+				<label><input type="text" name="email" value="" placeholder="email@example.com">Ваш e-mail:</label>
+			</p>
+			<p class="feedback-item">
+				<label><input type="text" name="text" value="" placeholder="В свободной форме">Текст письма:</label>
+			</p>
+			<button class="button" type="submit">Отправить</button>			
+			</form>			
+		</section>	
 	</main>
 	<footer class="main-footer">
 			<ul>
