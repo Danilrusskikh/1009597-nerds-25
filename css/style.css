@@ -78,11 +78,10 @@ a {
 	list-style: none;
 } 
 
-legend {
+.filter p {
 	font-size: 18px;
 	line-height: 30px;
 	font-weight: 700;
-	text-transform: uppercase;
 }
 .filter-option {
 	list-style: none;
@@ -111,4 +110,103 @@ legend {
 .site a {
 	color: white;
 	background-color: #fb565a;
+}
+/*сетка*/
+.container {
+	width: 1160px;
+	margin: 0 auto;
+	padding: 20px;
+}
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+
+}
+.main-header {
+	margin-bottom: 81px;
+}
+
+.main-navigation {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.main-header-logo {
+	width: 160px;
+	height: 65px;
+	padding-top: 50px;
+	
+}
+.site-navigation {
+	display: flex;
+	justify-content: space-between;
+	width: 440px;
+	margin: 0;
+	padding-top: 75px;
+}
+.site-navigation-box {
+	width: 160px;
+	margin: 0;
+	padding-top: 75px;
+}
+.main-navigation-wrapper {
+	width: 100%;
+}
+.main-navigation-wrapper .container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.catalog-list {
+	display: flex;
+    width: 1100px;
+	margin-right: 100px;
+	padding: 0;
+	
+}
+.feature-item-1 {
+	width: 300px;
+	margin-right: 100px;
+	
+}
+.feature-item-2 {
+	width: 300px;
+	margin-right: 100px;
+}
+.feature-item-3 {
+	width: 300px;
+
+}
+.main-footer .container {
+ 	display: flex;
+ 
+}
+.social-list {
+	width: 260px;
+	margin: 0;
+	margin-right: 140px;
+}
+.footer-social {
+	width: 560px;
+}
+.h1 {
+	margin-bottom: 110px;
+	margin-left: 220px;
+    padding-top: 75px;
+    width: 760px;
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: 500;   
+}
+
+.example-list {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 133px;
+}
+.site-box {
+	width: 360px;
+	align-items: left;
 }
