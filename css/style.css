@@ -143,7 +143,7 @@ a {
 	justify-content: space-between;
 	width: 440px;
 	margin: 0;
-	padding-top: 75px;
+	padding-top: 71px;
 }
 .site-navigation-box {
 	width: 160px;
@@ -204,9 +204,37 @@ a {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-top: 133px;
+	margin-top: 0px;
 }
 .site-box {
 	width: 360px;
 	align-items: left;
 }
+.grid {
+	display: flex;
+
+}
+.example-list-catalog {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	justify-content: space-between;
+
+}
+.filter-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.filter {
+	width: 260px;
+	height: 616px;
+}
+.example {
+	width: 760px;
+	padding-left: 140px;
+}
+.site-box {
+	margin-bottom: 33px;
