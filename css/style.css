@@ -1,12 +1,12 @@
 body {
-	margin: 0;
+	margin: 0px;
 	padding: 0;
 
 	font-family: "roboto", arial, sans-serif;
 	font-size: 16px;
 	line-height: 24px;
 	color: #283136;
-
+    
 	background-color: white;
 }
 a {
@@ -31,6 +31,7 @@ a {
 .main-navigation h1 {
 	font-size: 55px;
 	line-height: 55px;
+	font-weight: 600;
 }
 .site-navigation {
 	font-size: 16px;
@@ -161,13 +162,13 @@ a {
 .wrapper {
 	display: flex;
 	justify-content: space-between;
-	padding-top: 75px;
+	padding-top: 50px;
 	align-items: center;
 
 }
 .main-header {
 	padding-bottom: 1px;
-	margin-bottom: 81px;
+	margin-bottom: 50px;
 }
 
 .main-navigation {
@@ -203,6 +204,8 @@ a {
 	content:"";
 	background-image: url("../img/cart-icon.svg");
 	background-repeat: no-repeat;
+	
+     
 
 
 }
@@ -249,7 +252,7 @@ a {
 }
 .main-footer .container {
  	display: flex;
- 	margin-top: 69px;
+ 	margin-top: 567px;
  	margin-bottom: 70px;
  
 }
@@ -298,12 +301,15 @@ a {
 	list-style: none;
 	margin: 0;
 	padding: 0;
+
+
 }
 .filter {
 	width: 260px;
 	height: 420px;
 }
 .example {
+	margin-top: -205px;
 	width: 760px;
 	padding-left: 140px;
 }
@@ -316,7 +322,7 @@ a {
 	background-color: #000000;
 	background-position: 0 0;
 	box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
-	display: none;
+	display:none;
 	
 }
 .modal {
@@ -384,16 +390,23 @@ a {
 	border: 2px solid #d7dcde;
 	margin-top: 9px;
 }
-.feedback button-1 {
+.button-1 {
 	display: block;
-	width: 260px;
-	top: 20px;
-	left: 760px;
-	background-color: #fb565a;
-	text-transform: uppercase;
-	color: #ffffff;
-	border: 0;
-	margin-top: 47px;
+  	width: 260px;
+  	height: 50px;
+  	padding: 13px 0;
+ 	 
+ 	 font-size: 16px;
+ 	 line-height: 18px;
+  	color: #ffffff;
+  	text-transform: uppercase;
+ 	 text-align: center;
+ 	 text-decoration: none;
+  
+ 	 background-color: #fb565a;
+ 	 border-radius: 3px;
+ 	 border: none;
+ 	 margin-top: 30px;
 }
 .feedback h4 {
 	font-size: 45px; 
@@ -404,6 +417,7 @@ a {
 .feedback p {
 	font-weight: 700;
 }
+
 .social-button {
 	display: flex;
 	align-items: center;
@@ -424,10 +438,17 @@ a {
 	background-color: #e74246;	
 }
 .social-button:focus {
-	background-color: #d7373b;
-	color: #e37376;
+	background-color: #e74246;
+	color: #ffffff;
 }
+.social-button:active {
+	background-color: #d7373b;
+	box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 
+}
+.social-button svg:active {
+	opacity: 0.3;
+}   
 
 
 
@@ -658,13 +679,18 @@ sup {
 .logo img {
 	opacity: 0.2;
 }
-.maps {
-    margin-top: 80px;
-	background-image: url(../img/map.png);
-	background-position: center;
-	background-repeat: no-repeat;
-    height: 416px;
-    width: auto;
+
+.iframe-index iframe {
+     position: absolute;
+     width: 100%;
+     padding-top: 81px;
+     left: 0px;
+     
+}
+.iframe-catalog iframe {
+	position: absolute;
+	width: 100%;
+	left: 0;
 }
 .maps button {
 	
@@ -682,7 +708,14 @@ sup {
     padding: 50px;
 
 }
+.adress {
+	position: absolute;
+    margin-top: 85px;
+    width: 297px;
+    padding: 32px 10px 46px;
+    background-color: #ffffff;
 
+}
 
 
 
@@ -791,4 +824,60 @@ sup {
 
 .max-price {
   text-align: right;
+}
+.sorting {
+	display: flex;
+	justify-content: space-between;
+	width: 760px;
+}
+.sorting b {
+	margin-right: 226px;
+	font-size: 18px;
+}
+.sorting-list {
+	display: flex;
+    list-style: none;
+    margin: 0;
+    width: 360px;
+}
+.sorting-item {
+	font-size: 14px;
+	line-height: 18px;
+	margin-right: 25px;
+}
+.sorting-buttons {
+	-webkit-box-align: center;
+    margin: 0;
+	align-items: center;
+}
+.filter button {
+	text-transform: uppercase;
+	width: 260px;
+	height: 50px;
+	background-color: #eeeeee;
+  	border-radius: 3px;
+  	border: none;
+  	font-size: 16px;
+  	line-height: 18px;
+  	color: #000000
+  	font-weight: 600;
+  	margin-top: 50px;
+
+}
+.filter button:hover,
+.filter button:focus {
+  	background-color: #dfdfdf;
+}
+
+.filter button:active {
+  	background-color: #d5d5d5;
+  	color: rgba(255, 255, 255, 0.3);
+  	box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+}
+.logo img:hover,
+.logo img:focus {
+	opacity:1;
+}
+.logo img:active {
+	opacity: 0.1;
 }

@@ -11,13 +11,13 @@
 		<nav class="main-navigation">
 			<div class="container">
 				<div class="wrapper">
-			<a class="main-header-logo">
+			<a class="main-header-logo" href="index.html">
 				<img src="img/nerds-logo.svg" width="160" height="65" alt="логотип дизайн студии «Nerds»">
 			</a>
 			<ul class="site-navigation">
 				<li><a href="#">Студия</a></li>					
 			    <li><a href="#">Клиенты</a></li>
-			    <li><a href="#">Магазин</a></li>
+			    <li><a href="catalog.html">Магазин</a></li>
 			    <li><a href="#">Контакты</a></li>
 			</ul>
 			<a class="site-navigation-box" href="#">Корзина</a>
@@ -85,13 +85,37 @@
 					    		<label><input type="checkbox" name="feature" value="basket">Корзина</label>
 					    	</li>
 					    </ul>		
-					    </div>							
-					<p><input type="submit" name="show">Показать</p>
+					   							
+					<button type="submit">Показать</button>
+					</div>
 				</form>
 			</div>
 			<section class="example">
-				<h2 class="visually-hidden">Каталог</h2>	
-				<div class="example-list">		
+				<h2 class="visually-hidden">Каталог</h2>
+				<section class="sorting">
+					<b>СОРТИРОВАТЬ:</b>
+					<ul class="sorting-list">
+						<li class="sorting-item">
+							<a class="active" href="#">по цене</a>
+						</li>
+						<li class="sorting-item">
+							<a href="#">по типу</a>
+						</li>
+						<li class="sorting-item"> 
+							<a href="#">по названию</a>
+						</li>
+					</ul>
+					<p class="sorting-buttons">
+						<button class="button-down" type="button">
+							<span class="visually-hidden">От большего к меньшему</span>	
+						</button>
+						<button class="button-up">
+							<span class="visually-hidden">Oт меньшего к большему</span>	
+						</button>
+					</p>
+				</section>
+
+				<div class="example-list">	
 					 <ul class="example-list-catalog">
 						<li class="site-box">
 							<div class="site">
@@ -147,9 +171,12 @@
 		</div>
 	</main>
 	<section class="maps">
-		<div class="container">
+		<div class="iframe-catalog">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1492.3254890432777!2d30.321327202960447!3d59.93847054590391!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fb661d55f%3A0xd0cc7f055debe430!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1560839663722!5m2!1sru!2sua" width="1200" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+		<div class="adress">
 		 	<h4>nerds design studio</h4>
-		 	191186, Санкт-Петербург,<br> ул. Б.Конюшенная, д. 19/8
+		 	191186, Санкт-Петербург, ул. Б.Конюшенная, д. 19/8
 		    <p>тел. +7(812)275-75-75</p>
 		    <a class="button" href="#">Напишите нам</a>
 		</div>
@@ -166,9 +193,9 @@
 			<p class="feedback-item-text">
 				<label>Текст письма:<input type="text" name="text" value="" placeholder="В свободной форме"></label>
 			</p>
-			<button class="button-1" type="submit">Отправить</button>
-			<button class="modal-close" type="button">Закрыть</button>			
-			</form>			
+			<button class="button-1" type="submit">Отправить</button>			
+			</form>	
+			<button class="modal-close" type="button">Закрыть</button>		
 		</section>
     <footer class="main-footer">
 		<div class="container">
