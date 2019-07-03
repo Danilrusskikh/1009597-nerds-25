@@ -6,7 +6,7 @@ body {
 	font-size: 16px;
 	line-height: 24px;
 	color: #283136;
-    width: 1440px;
+    min-width: 1440px;
 	background-color: white;
 }
 a {
@@ -30,7 +30,7 @@ main {
 .main-header {
 	background-color: #eeeeee;
 	padding-bottom: 30px;
-    margin-bottom: 60px;
+    margin-bottom: 57px;
 }
 .main-naigation { 
 	font-size: 16px;
@@ -357,8 +357,9 @@ main {
 }
 .main-footer .container {
  	display: flex;
- 	margin-top: 469px;
+ 	margin-top: 127px;
  	margin-bottom: 70px;
+ 	margin-left: 140px;
  
 }
 .social-list {
@@ -748,8 +749,8 @@ main {
 }
 .button-modal {
   display: block;
-  width: 240px;
-  padding: 18px 0;
+  width: 220px;
+  padding: 17px 0;
   
   font-size: 16px;
   line-height: 18px;
@@ -894,12 +895,10 @@ sup {
 }
 
 .iframe-index iframe {
-     position: absolute;
-     width: 100%;
-     padding-top: 0px;
-     margin-top: 36px;
-     left: 0px;
 
+     width: 100%;
+     margin: 0;
+     padding: 0;
      
 }
 .iframe-catalog iframe {
@@ -908,7 +907,7 @@ sup {
 	left: 0;
 }
 .maps {
-	margin-top: px;
+	margin-top:10 px;
 }
 .maps h4 {
 	text-transform: uppercase;
@@ -917,34 +916,49 @@ sup {
 	margin-top: 0;
 	color: #000;
 }
-.maps div {
-	width: 220px;
+.maps iframe-index {
+	width: 100%;
     margin-left: 140px;
-    background-color: #FFFFFF;
-    padding: 50px;
+   
 
 }
 .adress {
-	position: absolute;
-    margin-top: 48px;
-    width: 297px;
-    padding: 32px 10px 46px;
+	position: relative;
+	top: 50%;
+    width: 200px;
+    padding: 49px 70px 48px 49px;
     background-color: #ffffff;
     color: #000;
+
+    margin-top: -370px;
+    margin-left: 140px;
 }
 .adress p {
 	color: #000;
+	margin-top: 8px;
+	margin-bottom: 34px;
+}
+.adress h4 {
+	margin-bottom: 20px;
 }
 .adress-2 {
-	position: absolute;
-    margin-top: 19px;
-    width: 297px;
-    padding: 32px 10px 46px;
+	position: relative;
+	top: 50%;
+    width: 200px;
+    padding: 49px 70px 48px 49px;
     background-color: #ffffff;
     color: #000;
+    margin-top: 97px;
+    margin-left: 160px;
 }
 .adress-2 p {
 	color: #000;
+    margin-bottom: 35px;
+    margin-top: 7px;
+}
+.adress-2 h4 {
+	margin-bottom: 18px;
+    
 }
 .filter-item {
   margin: 0;
@@ -1109,7 +1123,7 @@ sup {
 	opacity:1;
 }
 .logo img:active {
-	opacity: 0.1;
+	opacity: 0.1; 
 }
 .filter-list { 
 	list-style-type: 0;
