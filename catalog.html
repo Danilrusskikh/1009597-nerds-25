@@ -15,7 +15,7 @@
 				<img src="img/nerds-logo.svg" width="160" height="65" alt="логотип дизайн студии «Nerds»">
 			</a>
 			<ul class="site-navigation">
-				<li><a class="current" href="index.html">Студия</a></li>					
+				<li><a  href="index.html">Студия</a></li>					
 			    <li><a href="#">Клиенты</a></li>
 			    <li><a class="current" href="catalog.html">Магазин</a></li>
 			    <li><a href="#">Контакты</a></li>
@@ -56,33 +56,33 @@
 					<div class="filter">
 					<p>Сетка:</p>
 							<ul class="filter-list">
-								<li class="filter-option">
-									<label><input type="radio" name="view" value="adaptive" checked>Адаптивная</label>
+								<li class="filter-option-radio">
+									<label><input class="visually-hidden" type="radio" name="view" value="adaptive" checked><span>Адаптивная</span></label>
 								</li>
-								<li class="filter-option">
-									<label><input type="radio" name="view" value="fixed">Фиксированая</label>
-								</li>
-								<li class="filter-option">
-									<label><input type="radio" name="view" value="rubber">Резиновая</label>
+								<li class="filter-option-radio">
+									<label><input class="visually-hidden" type="radio" name="view" value="fixed"><span>Фиксированая</span></label>
+								</li></span>
+								<li class="filter-option-radio">
+									<label><input class="visually-hidden" type="radio" name="view" value="rubber"><span>Резиновая</span></label>
 								</li>
 							</ul>
 						
 						<p>Особенности:</p>
 						<ul class="filter-list">			
 							<li class="filter-option">
-								<label><input type="checkbox" name="feature" value="slide" checked><span>Слайдер</span></label>
+								<label><input class="visually-hidden" type="checkbox" name="feature" value="slide" checked><span>Слайдер</span></label>
 							</li>
 					    	<li class="filter-option">
-					    		<label><input type="checkbox" name="feature" value="block"><span>Блок преимуществ</span></label>
+					    		<label><input class="visually-hidden" type="checkbox" name="feature" value="block"><span>Блок преимуществ</span></label>
 					    	</li>
 					    	<li class="filter-option">
-					    		<label><input type="checkbox" name="feature" value="news" checked><span>Новости</span></label>
+					    		<label><input class="visually-hidden" type="checkbox" name="feature" value="news" checked><span>Новости</span></label>
 					    	</li>
 					    	<li class="filter-option">
-					    		<label><input type="checkbox" name="feature" value="passage"><span>Галерея</span></label>
+					    		<label><input class="visually-hidden" type="checkbox" name="feature" value="passage"><span>Галерея</span></label>
 					    	</li>
 					    	<li class="filter-option">
-					    		<label><input type="checkbox" name="feature" value="basket"><span>Корзина</span></label>
+					    		<label><input class="visually-hidden" type="checkbox" name="feature" value="basket"><span>Корзина</span></label>
 					    	</li>
 					    </ul>		
 					   							
@@ -182,13 +182,13 @@
 	</main>
 	<section class="maps">
 		<div class="iframe-catalog">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1492.3254890432777!2d30.321327202960447!3d59.93847054590391!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fb661d55f%3A0xd0cc7f055debe430!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1560839663722!5m2!1sru!2sua" width="1200" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1492.3254890432777!2d30.321327202960447!3d59.93847054590391!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fb661d55f%3A0xd0cc7f055debe430!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1560839663722!5m2!1sru!2sua" width="1200" height="416" frameborder="0" style="border:0" allowfullscreen></iframe>
 		</div>
-		<div class="adress">
+		<div class="adress-2">
 		 	<h4>nerds design studio</h4>
 		 	191186, Санкт-Петербург, ул. Б.Конюшенная, д. 19/8
 		    <p>тел. +7(812)275-75-75</p>
-		    <a class="button" href="#">Напишите нам</a>
+		    <a class="button-modal" href="#">Напишите нам</a>
 		</div>
 	</section>
 	
@@ -229,7 +229,22 @@
 			<button class="button-1" type="submit">Отправить</button>			
 			</form>	
 			<button class="modal-close" type="button">Закрыть</button>		
-		</section>	
+		</section>
+		<script>
+			var link = document.querySelector(".button-modal");
+			var popup = document.querySelector(".modal");
+			var close = document.querySelector(".modal-close");
+
+			link.addEventListener("click", function (evt) {
+				evt.preventDefault();
+				popup.classList.add("modal-show");
+			});
+			close.addEventListener("click", function (evt) {
+				evt.preventDefault();
+				popup.classList.remove("modal-show")
+			})	
+
+	</script>	
 </body>
 
 </html>
