@@ -29,7 +29,7 @@ main {
 }
 .main-header {
 	background-color: #eeeeee;
-	padding-bottom: 27px;
+	padding-bottom: 30px;
     margin-bottom: 60px;
 }
 .main-naigation { 
@@ -159,6 +159,14 @@ main {
 	color: white;
 	background-color: #fb565a;
 }
+.site a:hover {
+	color: white;
+	background-color: #e74246;
+}
+.site a:active {
+	color: white;
+	background-color: #d7373b;
+}
 .site {
 	display: none;
     position: absolute;
@@ -198,6 +206,12 @@ main {
 	margin-top: 30px;
 	margin-bottom: 15px;
 }
+.site:hover h3 {
+	color: #fb565a;
+}
+.site:active h3 {
+	color: rgba(0, 0, 0, 0.3);
+}
 .site p {
 	font-size: 16px;
 	line-height: 18px;
@@ -213,6 +227,10 @@ main {
 	color: #ffffff
 	background-color: #fb565a;
 	text-transform: uppercase;
+}
+.button:hover {
+	background-color: #e74246
+	color: #fff;
 }
 .feature-item-1 .button:hover {
 	background-color: #e74246;
@@ -645,7 +663,10 @@ main {
   display: none;
   padding: 78px 0 80px 0;
 }
-
+.slider-item-button:hover {
+	color: #fff;
+	background-color: #e74246;
+}
 .slider-item:nth-child(1) {
   background-image: url("../img/slide1.png");
   background-repeat: no-repeat;
@@ -750,11 +771,13 @@ main {
    color: rgba(255, 255, 255, 0.3);
    box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
-}
+
 .button:hover,
 .button:focus {
-   background-color: #e74246;
+	background-color: #e74246
+	color: #fff;
 }
+
 
 .button:active {
    background-color: #d7373b;
